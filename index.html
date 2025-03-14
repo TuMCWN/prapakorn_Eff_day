@@ -3,21 +3,21 @@
 <head>
     <title>คำนวณประสิทธิภาพการผลิต</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
+        body { font-family: Arial, sans-serif; padding: 100px; }
         .container {
             display: flex; /* ใช้ Flexbox เพื่อจัดเลย์เอาต์ */
             max-width: 1200px; /* เพิ่มความกว้างสูงสุดของ container */
             margin: auto;
-            gap: 20px; /* ระยะห่างระหว่างคอลัมน์ */
+            gap: 1px; /* ระยะห่างระหว่างคอลัมน์ */
         }
         .form-container, .result-container {
             flex: 1; /* ให้ทั้งสองคอลัมน์มีความกว้างเท่ากัน */
         }
-        input { margin: 5px 0; width: 200px; }
+        input { margin: 5px 0; width: 250px; }
         .result {
-            padding: 15px;
-            background: #f0f0f0;
-            border-radius: 5px;
+            padding: 50px;
+            
+            border-radius: 10px;
         }
         .style-option { margin: 10px 0; }
     </style>
@@ -31,8 +31,8 @@
                 <!-- เลือกจำนวน Style -->
                 <div class="style-option">
                     <label>เลือกจำนวน Style:</label><br>
-                    <input type="radio" id="style1" name="styleOption" value="1" checked onclick="toggleStyleFields()"> 1 Style<br>
-                    <input type="radio" id="style2" name="styleOption" value="2" onclick="toggleStyleFields()"> 2 Style<br>
+                    <input type="radio" id="style1" name="styleOption" value="1" checked onclick="toggleStyleFields()">1 Style<br>
+                    <input type="radio" id="style2" name="styleOption" value="2" onclick="toggleStyleFields()">2 Style<br>
                 </div>
 
                 <!-- ฟิลด์สำหรับ 1 Style -->
@@ -77,6 +77,10 @@
         <!-- คอลัมน์ขวา: ผลลัพธ์ -->
         <div class="result-container">
             <div class="result" id="result">
+                <br> </br>
+                <br> </br>
+                  <br> </br>
+                   <br> </br>
                 <h3>ผลลัพธ์:</h3>
                 <p>กรอกข้อมูลและกด "คำนวณ" เพื่อดูผลลัพธ์</p>
             </div>
@@ -150,7 +154,11 @@
 
             // แสดงผลลัพธ์
             document.getElementById('result').innerHTML = `
-                <h3>ผลลัพธ์:</h3>
+                <br> </br>
+                <br> </br>
+                  <br> </br>
+                   <br> </br>
+               <h3>ผลลัพธ์:</h3>
                 <p>ประสิทธิภาพ: <strong>${eff.toFixed(2)}%</strong></p>
                 <h3 style="color: red;">หมายเหตุ</h3>
                 <p><h3>ตัวอย่าง</h3>ถ้าประสิทธิภาพ = 65.79 % ควรเพิ่ม Ouput เพื่อปรับ %EFF เป็น 66.00%</p>
